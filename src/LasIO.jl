@@ -17,6 +17,9 @@ export
     LasPoint1,
     LasPoint2,
     LasPoint3,
+    LasPoint6,
+    LasPoint7,
+    LasPoint8,
     PointVector,
 
     # Functions on LasHeader
