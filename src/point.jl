@@ -102,6 +102,83 @@ end
     blue::N0f16
 end
 
+"ASPRS LAS point data record format 6"
+@gen_io struct LasPoint6 <: LasPoint
+    x::Int32
+    y::Int32
+    z::Int32
+    intensity::UInt16
+    return_number::UInt8
+    number_of_returns::UInt8
+    synthetic::Bool
+    key_point::Bool
+    whithheld::Bool
+    overlap::Bool
+    scanner_channel::UInt8
+    scan_direction_flag::Bool
+    edge_of_flight_line::Bool
+    classification::UInt8
+    user_data::UInt8
+    scan_angle::Int16
+    pt_src_id::UInt8
+    gps_time::Float64
+end
+
+
+"ASPRS LAS point data record format 7"
+@gen_io struct LasPoint7 <: LasPoint
+    x::Int32
+    y::Int32
+    z::Int32
+    intensity::UInt16
+    return_number::UInt8
+    number_of_returns::UInt8
+    synthetic::Bool
+    key_point::Bool
+    whithheld::Bool
+    overlap::Bool
+    scanner_channel::UInt8
+    scan_direction_flag::Bool
+    edge_of_flight_line::Bool
+    classification::UInt8
+    user_data::UInt8
+    scan_angle::Int16
+    pt_src_id::UInt8
+    gps_time::Float64
+    red::N0f16
+    green::N0f16
+    blue::N0f16
+end
+
+
+
+"ASPRS LAS point data record format 8"
+@gen_io struct LasPoint8 <: LasPoint
+    x::Int32
+    y::Int32
+    z::Int32
+    intensity::UInt16
+    return_number::UInt8
+    number_of_returns::UInt8
+    synthetic::Bool
+    key_point::Bool
+    whithheld::Bool
+    overlap::Bool
+    scanner_channel::UInt8
+    scan_direction_flag::Bool
+    edge_of_flight_line::Bool
+    classification::UInt8
+    user_data::UInt8
+    scan_angle::Int16
+    pt_src_id::UInt8
+    gps_time::Float64
+    red::N0f16
+    green::N0f16
+    blue::N0f16
+    nir::N0f16
+end
+
+
 # for convenience in function signatures
 const LasPointColor = Union{LasPoint2,LasPoint3}
 const LasPointTime = Union{LasPoint1,LasPoint3}
