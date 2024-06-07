@@ -108,15 +108,8 @@ end
     y::Int32
     z::Int32
     intensity::UInt16
-    return_number::UInt8
-    number_of_returns::UInt8
-    synthetic::Bool
-    key_point::Bool
-    whithheld::Bool
-    overlap::Bool
-    scanner_channel::UInt8
-    scan_direction_flag::Bool
-    edge_of_flight_line::Bool
+    raw_returns_number::UInt8 # return_number 4 bits, number_of_returns 4 bits
+    flag_byte::UInt8 ## synthetic::Bool, key_point::Bool, whithheld::Bool, overlap::Bool, scanner_channel::2 bits, scan_direction_flag::Bool, edge_of_flight_line::Bool
     classification::UInt8
     user_data::UInt8
     scan_angle::Int16
@@ -131,15 +124,8 @@ end
     y::Int32
     z::Int32
     intensity::UInt16
-    return_number::UInt8
-    number_of_returns::UInt8
-    synthetic::Bool
-    key_point::Bool
-    whithheld::Bool
-    overlap::Bool
-    scanner_channel::UInt8
-    scan_direction_flag::Bool
-    edge_of_flight_line::Bool
+    raw_returns_number::UInt8 # return_number 4 bits, number_of_returns 4 bits
+    flag_byte::UInt8 ## synthetic::Bool, key_point::Bool, whithheld::Bool, overlap::Bool, scanner_channel::2 bits, scan_direction_flag::Bool, edge_of_flight_line::Bool
     classification::UInt8
     user_data::UInt8
     scan_angle::Int16
@@ -158,15 +144,8 @@ end
     y::Int32
     z::Int32
     intensity::UInt16
-    return_number::UInt8
-    number_of_returns::UInt8
-    synthetic::Bool
-    key_point::Bool
-    whithheld::Bool
-    overlap::Bool
-    scanner_channel::UInt8
-    scan_direction_flag::Bool
-    edge_of_flight_line::Bool
+    raw_returns_number::UInt8 # return_number 4 bits, number_of_returns 4 bits
+    flag_byte::UInt8 ## synthetic::Bool, key_point::Bool, whithheld::Bool, overlap::Bool, scanner_channel::2 bits, scan_direction_flag::Bool, edge_of_flight_line::Bool
     classification::UInt8
     user_data::UInt8
     scan_angle::Int16
