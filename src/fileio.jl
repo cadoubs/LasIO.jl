@@ -10,6 +10,12 @@ function pointformat(header::LasHeader)
         return LasPoint2
     elseif id == 0x03
         return LasPoint3
+    elseif id == 0x06
+        return LasPoint6
+    elseif id == 0x07
+        return LasPoint7
+    elseif id == 0x08
+        return LasPoint8
     else
         error("unsupported point format $(Int(id))")
     end
